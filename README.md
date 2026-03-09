@@ -36,16 +36,16 @@
 ## Structure
 
 SwiftUIAppTemplate/
-App/
-Core/
-Core/DI/
-Core/Networking/
-Core/Storage/
-Core/Logging/
-Core/UI/
-Features/
-Features/Home/
-Docs/
+- App/
+- Core/
+- Core/DI/
+- Core/Networking/
+- Core/Storage/
+- Core/Logging/
+- Core/UI/
+- Features/
+- Features/Home/
+- Docs/
 
 ---
 
