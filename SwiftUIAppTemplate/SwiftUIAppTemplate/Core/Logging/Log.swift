@@ -2,6 +2,19 @@
 //  Log.swift
 //  SwiftUIAppTemplate
 //
-//  Created by Yuri Cernov on 09/03/2026.
-//
 
+import Foundation
+
+enum Log {
+    static func info(_ message: String) {
+        #if DEBUG
+        print("ℹ️ \(message)")
+        #endif
+    }
+
+    static func error(_ message: String) {
+        #if DEBUG
+        print("⛔️ \(message)")
+        #endif
+    }
+}

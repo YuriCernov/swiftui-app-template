@@ -2,6 +2,16 @@
 //  AppRootView.swift
 //  SwiftUIAppTemplate
 //
-//  Created by Yuri Cernov on 09/03/2026.
-//
 
+import SwiftUI
+
+struct AppRootView: View {
+
+    let container: AppContainer
+
+    var body: some View {
+        NavigationStack {
+            HomeView(viewModel: HomeViewModel(container: container))
+        }
+    }
+}

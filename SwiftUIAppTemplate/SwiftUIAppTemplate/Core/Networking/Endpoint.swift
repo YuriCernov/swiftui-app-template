@@ -2,6 +2,16 @@
 //  Endpoint.swift
 //  SwiftUIAppTemplate
 //
-//  Created by Yuri Cernov on 09/03/2026.
-//
 
+import Foundation
+
+struct Endpoint {
+
+    let path: String
+    var queryItems: [URLQueryItem] = []
+
+    init(path: String, queryItems: [URLQueryItem] = []) {
+        self.path = path
+        self.queryItems = queryItems
+    }
+}
